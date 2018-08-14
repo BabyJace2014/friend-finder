@@ -3,182 +3,151 @@
 <html>    
     <head>
         <meta charset="UTF-8">
-        <title>Friend Finder Survey</title>
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <!-- JQuery -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified Javascript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <title>Friend Finder - Survey</title>
 
     </head>
     <body>
-    <div class = "container">
-        <div class = "page-header">
-            <h1><span class="glyphicon glyphicon-list-alt"></span> Survey Questions</h1>
-        </div>
-
-            <div class="panel panel-default">
-
-                <div class="panel-heading">
-                    <h3 class="panel-title"><strong>About You</strong></h3>
-                </div>
-
-                <div class="panel-body">
-                    <h4>Name</h4>
-                    <div class="input-group">
-                        <!-- Form -->
-                        <input id = "formName" class="form-control" type="text" name="name">
-                        <span class="input-group-addon">(Required)</span>
-                    </div>
+        <div class='container'>
+            <div class='card-panel yellow darken-1 col s12 center-align'>
+                <h4><strong>Survey Questions</strong></h4>
+                <div class='card-panel left-align white'>
+                    <h5><strong>About You</strong></h5>
                     <br>
-                    <h4>Link to a Photo Image</h4>
-                    <div class="input-group">
-                        <input id = "formImage" class="form-control" type="text" name="name">
-                        <span class="input-group-addon">Required</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Questionnaire</strong></h3>
-                </div>
-                <div class="panel-body">
-
-                    <h4><strong>Question 1</strong></h4>
-                    <h5>I am always happy.</h5>
-                    <select data-placeholder="" class="select" id="Q1">
-                        <option value=""></option>
+                    <input id="name" type="text" class="validate" required>
+                    <label class='active' for="name">Name (required)</label>
+                    <input id="photo" type="text" class="validate" required>
+                    <label class='active' for="name">Link to Photo Image (required)</label>
+                    <h5><strong>Question 1</strong></h5>
+                    <p>I see myself as extroverted, enthusiastic.</p>
+                    <select data-placeholder="" class="browser-default" id="q1">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 2</strong></h4>
-                    <h5>I do not procrastinate.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 2</strong></h5>
+                    <p>I see myself as critical, quarrelsome.</p>
+                    <select data-placeholder="" class="browser-default" id="q2">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 3</strong></h4>
-                    <h5>I see myself as dependable, self-disciplined.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 3</strong></h5>
+                    <p>I see myself as dependable, self-disciplined.</p>
+                    <select data-placeholder="" class="browser-default" id="q3">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 4</strong></h4>
-                    <h5>I see myself as anxious, easily upset.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 4</strong></h5>
+                    <p>I see myself as anxious, easily upset.</p>
+                    <select data-placeholder="" class="browser-default" id="q4">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 5</strong></h4>
-                    <h5>I see myself as open to new experience.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 5</strong></h5>
+                    <p>I see myself as open to new experiences.</p>
+                    <select data-placeholder="" class="browser-default" id="q5">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 6</strong></h4>
-                    <h5>I see myself as reserved, quiet.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 6</strong></h5>
+                    <p>I see myself as reserved, quiet</p>
+                    <select data-placeholder="" class="browser-default" id="q6">
+                        <option value="">Choose an Option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 7</strong></h4>
-                    <h5>I see myself as sympathetic.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 7</strong></h5>
+                    <p>I see myself as sympathetic.</p>
+                    <select data-placeholder="" class="browser-default" id="q7">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 8</strong></h4>
-                    <h5>I see myself as disorganized.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 8</strong></h5>
+                    <p>I see myself as disorganized.</p>
+                    <select data-placeholder="" class="browser-default" id="q8">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 9</strong></h4>
-                    <h5>I see myself as calm, emotionally stable.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 9</strong></h5>
+                    <p>I see myself as calm, emotionally stable.</p>
+                    <select data-placeholder="" class="browser-default" id="q9">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-
-                    <h4><strong>Question 10</strong></h4>
-                    <h5>I see myself as practical, conventional.</h5>
-                    <select data-placeholder="" class="select" id="Q2">
-                        <option value=""></option>
+                    <h5><strong>Question 10</strong></h5>
+                    <p>I see myself as practical, conventional.</p>
+                    <select data-placeholder="" class="browser-default" id="q10">
+                        <option value="">Choose an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
-                        <opiton value="2">2</opiton>
+                        <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
                     <br>
                     <!-- Materialize Modal Trigger/Submit Button -->
-                    <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+                    <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
                 </div>
             </div>
             <div class='col s4'>
-                <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/BabyJace2014/friend-finder' target='_blank'>Github Repo</a></p>
+                <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/StefanieDing/friend-finder' target='_blank'>GitHub Repo</a></p>
             </div>
-
+    
             <!-- Materialize Modal Structure -->
             <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <h4>Meet Your New Best Friend</h4>
-                    <h5 id="matchName"></h5>
-                    <img id="matchPic" src="" alt="No Image" width = 250px>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
-                </div>
+              <div class="modal-content">
+                <h4>Meet Your New BFF</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchPic" src="" alt="No Image" width = 250px>
+              </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
             </div>
-
+          </div>
+    
         </div>
 
         <!-- Grabs information and sends it to the server -->
@@ -204,7 +173,7 @@
                 }
 
                 // if everything is filled
-                if (validateForm() === true) {
+                if (validateForm() == true) {
                     // creates a new friend from the values submitted
                     var newFriend = {
                         name: $('#name').val().trim(),

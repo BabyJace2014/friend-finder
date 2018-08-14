@@ -18,10 +18,10 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 // Router
-require('./app/routing/apiRoutes')(app);
-require('./app/routing/htmlRoutes')(app);
+require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
 
 // Listener
 app.listen(PORT, function() {
-    console.log("App listening on PORT: " = PORT);
+    console.log("App listening on PORT: " + PORT);
 });
